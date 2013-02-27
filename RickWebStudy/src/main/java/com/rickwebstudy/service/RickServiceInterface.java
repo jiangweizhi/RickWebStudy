@@ -7,5 +7,6 @@ import com.rickwebstudy.entity.Comment;
 public interface RickServiceInterface {
 	//For Comment
 	public List<Comment> getCommentByJobIdAndStatus(Long jobId, String status);
+	public List<Comment> getComments();
 	public void persistComment(Comment comment);
 }

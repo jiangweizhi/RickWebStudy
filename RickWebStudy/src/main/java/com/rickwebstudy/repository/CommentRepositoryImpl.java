@@ -60,5 +60,14 @@ public class CommentRepositoryImpl implements CommentRepositoryCustom{
 		List<Comment> result = query.getResultList();
 		return result;
 	}
+
+	@Override
+	public List<Comment> getComments() {
+		String querystr = "FROM Comment";
+		Query query = entityManager.createQuery(querystr);
+		@SuppressWarnings("unchecked")
+		List<Comment> result = query.getResultList();
+		return result;
+	}
 	
 }

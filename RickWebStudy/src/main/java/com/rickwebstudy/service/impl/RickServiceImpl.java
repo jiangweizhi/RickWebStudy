@@ -26,4 +26,9 @@ public class RickServiceImpl implements RickServiceInterface {
 	public void persistComment(Comment comment) {
 		commentRepository.saveAndFlush(comment);
 	}
+
+	@Override
+	public List<Comment> getComments() {
+		return commentRepository.getComments();
+	}
 }

@@ -9,4 +9,5 @@ public interface CommentRepositoryCustom {
 	List<Comment> getByJobId(Long jobId);
 	List<Comment> getByJobIdAndStatus(Long jobId, String status);
 	List<Comment> getByUserId(Long userId);
+	List<Comment> getComments();
 }

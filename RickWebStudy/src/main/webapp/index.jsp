@@ -16,8 +16,8 @@
 		<div>Hello Rick</div>
 		<form:form id="commentForm" method="post" action="/comment/postComment.xhtml" enctype="multipart/form-data">
 			<div>
-				<a href="<c:url value="/home.xhtml" />">Home</a>
-				<img src="<c:url value="/static/images/hello.gif"/>" />
+				<%-- <a href="<c:url value="/home.xhtml" />">Home</a>
+				<img src="<c:url value="/static/images/hello.gif"/>" /> --%>
 				<textarea id="txtComment" rows="3" cols="20"></textarea>
 				<input type="button" id="btnPost" value="Post Message" />
 			</div>

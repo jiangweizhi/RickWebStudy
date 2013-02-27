@@ -1,6 +1,7 @@
 package com.rickwebstudy.controller;
 
 import java.util.Calendar;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -38,5 +39,13 @@ public class CommentController extends AbstractController{
 		ModelAndView mav = new ModelAndView("CommentResult");
 		
 		return mav;
+	}
+	
+	@RequestMapping(value = "getComment")
+	public Object getComment(){
+		
+		List<Comment> listComment = rickService.getComments();
+		
+		return null;
 	}
 }
