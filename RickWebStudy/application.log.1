@@ -1,481 +1,3 @@
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@260d8d, org.springframework.security.web.authentication.logout.LogoutFilter@43ad4a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@125d568, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ddcd98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e4bece, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aaf063, org.springframework.security.web.session.SessionManagementFilter@8bf3ec, org.springframework.security.web.access.ExceptionTranslationFilter@3b3757, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ae717f]
-INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
-DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
-INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:6lhm6zqqj7nb19qk30j4bodlc@8563951. A new one will be created.
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@905571d8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 6lhm6zqqj7nb19qk30j4bodlc; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.FilterChainProxy - /baseLayout.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 23735419@qtp-11574921-12 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
-INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
-INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
-INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
-INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
-INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1dd1752, org.springframework.security.web.authentication.logout.LogoutFilter@260d8d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43ad4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@125d568, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ddcd98, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e4bece, org.springframework.security.web.session.SessionManagementFilter@aaf063, org.springframework.security.web.access.ExceptionTranslationFilter@8bf3ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b3757]
-INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
-DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
-INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:nglac6b3o8b51idpn5zm641wz@590702. A new one will be created.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@6fa86552: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffd148a: RemoteIpAddress: 127.0.0.1; SessionId: nglac6b3o8b51idpn5zm641wz; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No HttpSession currently exists
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: null. A new one will be created.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.session.SessionManagementFilter - Requested session ID 1xahc97j2wlk61sd08i9fc2e7x is invalid.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No HttpSession currently exists
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: null. A new one will be created.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.session.SessionManagementFilter - Requested session ID 1xahc97j2wlk61sd08i9fc2e7x is invalid.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:1nna4g70prxrx101tms4jirfhi@22516593. A new one will be created.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@90572420: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: 1nna4g70prxrx101tms4jirfhi; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 14308998@qtp-11574921-2 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:1nna4g70prxrx101tms4jirfhi@22516593. A new one will be created.
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@90572420: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@255f8: RemoteIpAddress: 127.0.0.1; SessionId: 1nna4g70prxrx101tms4jirfhi; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 18002397@qtp-11574921-4 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
-INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
-INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
-INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
-INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
-INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
-INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1c0cd80, org.springframework.security.web.authentication.logout.LogoutFilter@f3c5c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ce725, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b6ac8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f7cfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b72276, org.springframework.security.web.session.SessionManagementFilter@377e2a, org.springframework.security.web.access.ExceptionTranslationFilter@13c1b69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12bbe6b]
-INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
-DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
-INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 8 ms
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:eiem7b2d5zsrixofjhh7cum9@11600861. A new one will be created.
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@90579aae: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@2eb76: RemoteIpAddress: 127.0.0.1; SessionId: eiem7b2d5zsrixofjhh7cum9; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:eiem7b2d5zsrixofjhh7cum9@11600861. A new one will be created.
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@90579aae: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@2eb76: RemoteIpAddress: 127.0.0.1; SessionId: eiem7b2d5zsrixofjhh7cum9; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 11886941@qtp-23207490-2 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
-INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
-INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
-INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
-INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
-INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
-INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@f3c5c4, org.springframework.security.web.authentication.logout.LogoutFilter@3ce725, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b6ac8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f7cfe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b72276, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@377e2a, org.springframework.security.web.session.SessionManagementFilter@13c1b69, org.springframework.security.web.access.ExceptionTranslationFilter@12bbe6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e28a61]
-INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
-DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
-INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 15 ms
-INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
-INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
-INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
-INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
-INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
-INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
-INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1c0cd80, org.springframework.security.web.authentication.logout.LogoutFilter@f3c5c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ce725, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b6ac8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f7cfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b72276, org.springframework.security.web.session.SessionManagementFilter@377e2a, org.springframework.security.web.access.ExceptionTranslationFilter@13c1b69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12bbe6b]
-INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
-DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
-INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 8 ms
-INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
-INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
-INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
-INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
-INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
-INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
-INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
-INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
-INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
-INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
-INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
-DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
-INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@2f7cfe, org.springframework.security.web.authentication.logout.LogoutFilter@1b72276, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@377e2a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13c1b69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12bbe6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e28a61, org.springframework.security.web.session.SessionManagementFilter@eb2133, org.springframework.security.web.access.ExceptionTranslationFilter@d0d843, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1263b07]
-INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
-DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
-INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
-INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
-INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
-INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
-INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:9jmg9mzwz76i922cy6vxxdcl@11600861. A new one will be created.
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@6fa86552: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffd148a: RemoteIpAddress: 127.0.0.1; SessionId: 9jmg9mzwz76i922cy6vxxdcl; Granted Authorities: ROLE_ANONYMOUS'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
-DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
-INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
-INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
-INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
-INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
-INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
-INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
-INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
-	name: persistenceUnit
-	...]
-INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
 INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
 INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
 INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
@@ -531,3 +53,484 @@ INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing Persistenc
 INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
 INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
 INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@6b6ac8, org.springframework.security.web.authentication.logout.LogoutFilter@2f7cfe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b72276, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@377e2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13c1b69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12bbe6b, org.springframework.security.web.session.SessionManagementFilter@e28a61, org.springframework.security.web.access.ExceptionTranslationFilter@eb2133, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d0d843]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 8 ms
+INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
+INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
+INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: persistenceUnit
+	...]
+INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@3ce725, org.springframework.security.web.authentication.logout.LogoutFilter@6b6ac8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f7cfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b72276, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@377e2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c1b69, org.springframework.security.web.session.SessionManagementFilter@12bbe6b, org.springframework.security.web.access.ExceptionTranslationFilter@e28a61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eb2133]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No HttpSession currently exists
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: null. A new one will be created.
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9055e4a6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.session.SessionManagementFilter - Requested session ID z1cal7xcvj9oykrdk932qvcj is invalid.
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.FilterChainProxy - /home.xhtml reached end of additional filter chain; proceeding with original chain
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
+DEBUG 24670264@qtp-23207490-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
+INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
+INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
+INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: persistenceUnit
+	...]
+INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@116f2e6, org.springframework.security.web.authentication.logout.LogoutFilter@1a4f43e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9f26c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aaf2ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1334b1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@87cbde, org.springframework.security.web.session.SessionManagementFilter@1596138, org.springframework.security.web.access.ExceptionTranslationFilter@fdd15b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bbec72]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 11 ms
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:17cja0rzj744v1b1skh2ivf7re@13931135. A new one will be created.
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@9056f12c: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 127.0.0.1; SessionId: 17cja0rzj744v1b1skh2ivf7re; Granted Authorities: ROLE_ANONYMOUS'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml reached end of additional filter chain; proceeding with original chain
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
+DEBUG 16001744@qtp-10268916-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
+INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
+INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
+INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: persistenceUnit
+	...]
+INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@3ce725, org.springframework.security.web.authentication.logout.LogoutFilter@6b6ac8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f7cfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b72276, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@377e2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c1b69, org.springframework.security.web.session.SessionManagementFilter@12bbe6b, org.springframework.security.web.access.ExceptionTranslationFilter@e28a61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eb2133]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:xozt75hxggacev8zb9qumgec@3285908. A new one will be created.
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@6fa90ed4: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 127.0.0.1; SessionId: xozt75hxggacev8zb9qumgec; Granted Authorities: ROLE_ANONYMOUS'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml reached end of additional filter chain; proceeding with original chain
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
+INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
+INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
+INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: persistenceUnit
+	...]
+INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@3ce725, org.springframework.security.web.authentication.logout.LogoutFilter@6b6ac8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f7cfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b72276, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@377e2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c1b69, org.springframework.security.web.session.SessionManagementFilter@12bbe6b, org.springframework.security.web.access.ExceptionTranslationFilter@e28a61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eb2133]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:rr4blw0ktk1z1h5l7x4xbb8ma@32052357. A new one will be created.
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@6fab4e5e: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffe3f86: RemoteIpAddress: 127.0.0.1; SessionId: rr4blw0ktk1z1h5l7x4xbb8ma; Granted Authorities: ROLE_ANONYMOUS'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml reached end of additional filter chain; proceeding with original chain
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
+INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
+INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
+INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: persistenceUnit
+	...]
+INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment()
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@3ce725, org.springframework.security.web.authentication.logout.LogoutFilter@6b6ac8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f7cfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b72276, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@377e2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c1b69, org.springframework.security.web.session.SessionManagementFilter@12bbe6b, org.springframework.security.web.access.ExceptionTranslationFilter@e28a61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eb2133]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:ezm29dpehb4op0fhd88npghw@32052357. A new one will be created.
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@905571d8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: ezm29dpehb4op0fhd88npghw; Granted Authorities: ROLE_ANONYMOUS'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml reached end of additional filter chain; proceeding with original chain
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:ezm29dpehb4op0fhd88npghw@32052357. A new one will be created.
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@905571d8: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: ezm29dpehb4op0fhd88npghw; Granted Authorities: ROLE_ANONYMOUS'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 7 of 9 in additional filter chain; firing Filter: 'SessionManagementFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 8 of 9 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 9 of 9 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Public object - authentication not attempted
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml reached end of additional filter chain; proceeding with original chain
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.access.ExceptionTranslationFilter - Chain processed normally
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+DEBUG 5592862@qtp-24670264-0 org.springframework.security.web.context.SecurityContextPersistenceFilter - SecurityContextHolder now cleared, as request processing completed
+INFO main org.springframework.security.core.SpringSecurityCoreVersion - You are running with Spring Security Core 3.1.1.RELEASE
+INFO main org.springframework.security.config.SecurityNamespaceHandler - Spring Security 'config' module version is 3.1.1.RELEASE
+INFO main org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+INFO main org.springframework.security.config.http.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 800, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2000]
+INFO main org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnit'
+INFO main org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+INFO main org.hibernate.Version - HHH000412: Hibernate Core {4.0.1.Final}
+INFO main org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+INFO main org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+INFO main org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: persistenceUnit
+	...]
+INFO main org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO main org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO main org.hibernate.engine.jdbc.internal.LobCreatorBuilder - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+INFO main org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO main org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO main org.hibernate.validator.util.Version - Hibernate Validator 4.0.2.GA
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.comment
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [content, comment_id, status, created_at, user_id, job_id]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000261: Table found: rickstudy.user
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id, name, password]
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: []
+INFO main org.hibernate.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: []
+INFO main org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+INFO main org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/comment/postComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rickwebstudy.controller.CommentController.postComment(java.lang.String)
+INFO main org.hibernate.validator.engine.resolver.DefaultTraversableResolver - Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+DEBUG main org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.provisioning.JdbcUserDetailsManager - No authentication manager set. Reauthentication of users when changing passwords will not be performed.
+DEBUG main org.springframework.security.web.access.intercept.FilterSecurityInterceptor - Validated configuration attributes
+INFO main org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@11f2158, org.springframework.security.web.authentication.logout.LogoutFilter@c639ce, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fd360b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e72f0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c1cfc1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12eabae, org.springframework.security.web.session.SessionManagementFilter@10948cf, org.springframework.security.web.access.ExceptionTranslationFilter@8b3bb3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@fc9e7e]
+INFO main org.springframework.security.config.http.DefaultFilterChainValidator - Checking whether login URL '/userprofile/login-form.xhtml' is accessible with your configuration
+DEBUG main org.springframework.security.config.http.DefaultFilterChainValidator - No access attributes defined for login page URL
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - TilesConfigurer: adding definitions [/WEB-INF/config/views.xml]
+INFO main org.springframework.web.servlet.view.tiles2.TilesConfigurer - Found JSP 2.1 ExpressionFactory
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Initializing Tiles2 application context. . .
+INFO main org.apache.tiles.context.AbstractTilesApplicationContextFactory - Finished initializing Tiles2 application context.
+INFO main org.apache.tiles.access.TilesAccess - Publishing TilesContext for context: org.springframework.web.servlet.view.tiles2.SpringTilesApplicationContextFactory$SpringWildcardServletTilesApplicationContext
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment.*] onto handler 'commentController'
+INFO main org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping - Mapped URL path [/comment/postComment/] onto handler 'commentController'
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization started
+INFO main org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'appServlet': initialization completed in 7 ms
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 1 of 9 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - HttpSession returned null object for SPRING_SECURITY_CONTEXT
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.context.HttpSessionSecurityContextRepository - No SecurityContext was available from the HttpSession: org.mortbay.jetty.servlet.HashSessionManager$Session:ogdtssxvtmg510q3qlbg8yqdh@11600861. A new one will be created.
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 2 of 9 in additional filter chain; firing Filter: 'LogoutFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 3 of 9 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 4 of 9 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 5 of 9 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.FilterChainProxy - /comment/postComment.xhtml at position 6 of 9 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+DEBUG 1026511@qtp-11574921-0 org.springframework.security.web.authentication.AnonymousAuthenticationFilter - Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@6fa90ed4: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffc7f0c: RemoteIpAddress: 127.0.0.1; SessionId: ogdtssxvtmg510q3qlbg8yqdh; Granted Authorities: ROLE_ANONYMOUS'

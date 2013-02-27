@@ -18,14 +18,19 @@
 			<div>
 				<a href="<c:url value="/home.xhtml" />">Home</a>
 				<img src="<c:url value="/static/images/hello.gif"/>" />
-				<textarea rows="3" cols="20"></textarea>
-				<input type="button" value="Post Message" />
+				<textarea id="txtComment" rows="3" cols="20"></textarea>
+				<input type="button" id="btnPost" value="Post Message" />
 			</div>
+			<input type="hidden" id="hidPostMessage" name="commentValue" />
 		</form:form>
 	</body>
-	<!-- <script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function(){
-			alert('hihi')
+			$("#btnPost").bind("click", function(){
+				//alert($("#txtComment").val());
+				$("#hidPostMessage").val($("#txtComment").val());
+				$("#commentForm").submit();
+			});
 		});
-	</script> -->
+	</script>
 </html>

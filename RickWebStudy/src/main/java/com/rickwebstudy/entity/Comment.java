@@ -18,12 +18,12 @@ public class Comment implements Serializable{
 	@Column(name = "commentId")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long commentId;
-	@Column(name = "userId")
+	/*@Column(name = "userId")
 	private Long userId;
 	@Column(name = "jobId")
 	private Long jobId;
 	@Column(name = "status")
-	private String status;
+	private String status;*/
 	@Column(name = "content")
 	private String content;
 	@Column(name = "createdAt")
@@ -35,7 +35,7 @@ public class Comment implements Serializable{
 	public void setCommentId(Long commentId) {
 		this.commentId = commentId;
 	}
-	public Long getUserId() {
+	/*public Long getUserId() {
 		return userId;
 	}
 	public void setUserId(Long userId) {
@@ -52,7 +52,7 @@ public class Comment implements Serializable{
 	}
 	public void setStatus(String status) {
 		this.status = status;
-	}
+	}*/
 	public String getContent() {
 		return content;
 	}
