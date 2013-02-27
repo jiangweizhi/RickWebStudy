@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/views/menu/BaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/menu/Header.jsp" />
+		<put-attribute name="navigation" value="/WEB-INF/views/menu/Navigation.jsp" />
+		<put-attribute name="login" value="/WEB-INF/views/menu/LoginMenu.jsp" />
+		<put-attribute name="sidebar" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/menu/Footer.jsp" />
+	</definition>
+
+	<definition name="adminLayout" template="/WEB-INF/views/menu/BaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/menu/Header.jsp" />
+		<put-attribute name="navigation" value="/WEB-INF/views/menu/Navigation.jsp" />
+		<put-attribute name="login" value="/WEB-INF/views/menu/LoginMenu.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/menu/AdminSidebar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/menu/Footer.jsp" />
+	</definition>
+	
+	<definition name="profileDesignerLayout" template="/WEB-INF/views/menu/BaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/menu/Header.jsp" />
+		<put-attribute name="navigation" value="/WEB-INF/views/menu/Navigation.jsp" />
+		<put-attribute name="login" value="/WEB-INF/views/menu/LoginMenu.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/menu/ProfileDesignerSidebar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/menu/Footer.jsp" />
+	</definition>
+
+	<definition name="profileClientLayout" template="/WEB-INF/views/menu/BaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/menu/Header.jsp" />
+		<put-attribute name="navigation" value="/WEB-INF/views/menu/Navigation.jsp" />
+		<put-attribute name="login" value="/WEB-INF/views/menu/LoginMenu.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/views/menu/ProfileClientSidebar.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/menu/Footer.jsp" />
+	</definition>
+			
+	<!-- start home -->			
+	<definition name="/home.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Cloudesign Home Page" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="/gettingStarted.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Getting Started" />
+		<put-attribute name="body" value="/WEB-INF/views/home/started.jsp" />
+	</definition>
+	
+	<definition name="/tradingGuide.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Trading Guide" />
+		<put-attribute name="body" value="/WEB-INF/views/home/startedGuide.jsp" />
+	</definition>	
+	
+	<definition name="/startedForClients.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Transaction Security" />
+		<put-attribute name="body" value="/WEB-INF/views/home/startedForClients.jsp" />
+	</definition>	
+	
+	<definition name="/startedForDesigner.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Integrity Protection" />
+		<put-attribute name="body" value="/WEB-INF/views/home/startedForDesigner.jsp" />
+	</definition>
+	
+	<definition name="/aboutPayment.tiles" extends="baseLayout">
+		<put-attribute name="title" value="About Payment" />
+		<put-attribute name="body" value="/WEB-INF/views/home/paymentMethod.jsp" />
+	</definition>
+	
+	<definition name="/aboutDesign.tiles" extends="baseLayout">
+		<put-attribute name="title" value="About Design" />
+		<put-attribute name="body" value="/WEB-INF/views/home/aboutDesign.jsp" />
+	</definition>
+
+	<definition name="/aboutUs.tiles" extends="baseLayout">
+		<put-attribute name="title" value="About Us" />
+		<put-attribute name="body" value="/WEB-INF/views/home/aboutUs.jsp" />
+	</definition>
+				
+	<definition name="/faq.tiles" extends="baseLayout">
+		<put-attribute name="title" value="FAQ" />
+		<put-attribute name="body" value="/WEB-INF/views/home/aboutFaq.jsp" />
+	</definition>	
+	
+	
+	<definition name="/contactUs.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body" value="/WEB-INF/views/home/contactUs.jsp" />
+	</definition>	
+
+    <definition name="/project.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Projects" />
+		<put-attribute name="body" value="/WEB-INF/views/home/project.jsp" />
+	</definition>	
+
+	<definition name="/projectInteriorDesign.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Interior Design" />
+		<put-attribute name="body" value="/WEB-INF/views/home/projectInteriorDesign.jsp" />
+	</definition>
+	
+	<definition name="/projectExhibitionDesign.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Exhibition Design" />
+		<put-attribute name="body" value="/WEB-INF/views/home/projectExhibitionDesign.jsp" />
+	</definition>					
+
+		
+	<definition name="/desinger.tiles" extends="baseLayout">
+		<put-attribute name="title" value="designer" />
+		<put-attribute name="body" value="/WEB-INF/views/home/designer.jsp" />
+	</definition>	
+	
+	
+	<definition name="/designerExhibitionDesigner.tiles" extends="baseLayout">
+		<put-attribute name="title" value="designerExhibitionDesigner" />
+		<put-attribute name="body" value="/WEB-INF/views/home/designerExhibitionDesigner.jsp" />
+	</definition>	
+	
+	<definition name="/designerInteriorDesigner.tiles" extends="baseLayout">
+		<put-attribute name="title" value="designerInteriorDesigner" />
+		<put-attribute name="body" value="/WEB-INF/views/home/designerInteriorDesigner.jsp" />
+	</definition>	
+					
+	<definition name="/login.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Login Form" />
+		<put-attribute name="body" value="/WEB-INF/views/home/login.jsp" />
+	</definition>
+
+	<definition name="/register.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/views/home/register.jsp" />
+	</definition>	
+	<!-- end home -->			
+	<!-- start designer -->		
+	<definition name="/designerPortfolio.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="designerPortfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/designer/designerPortfolio.jsp" />
+	</definition>	
+	
+	<definition name="/designerPortfolioForDesigner.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="designerPortfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/designer/designerPortfolioForDesigner.jsp" />
+	</definition>	
+	
+	<definition name="/designerFinalSubmission.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="finalSubmission" />
+		<put-attribute name="body" value="/WEB-INF/views/designer/finalSubmission.jsp" />
+	</definition>	
+	
+	
+	<definition name="/designerFinalSubmissionRevision.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="finalSubmissionRevision" />
+		<put-attribute name="body" value="/WEB-INF/views/designer/finalSubmissionRevision.jsp" />
+	</definition>
+	
+	<definition name="/designerProposalSubmision.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="proposalSubmision" />
+		<put-attribute name="body" value="/WEB-INF/views/designer/proposalSubmision.jsp" />
+	</definition>
+	
+	<!-- end designer -->		
+	
+	
+     <!-- start clients -->	
+     
+     <definition name="/clientPortfolio.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="clientPortfolio" />
+	   <put-attribute name="body" value="/WEB-INF/views/client/clientPortfolio.jsp" />
+	</definition>
+	
+	<definition name="/clientPortfolioEdit.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="clientPortfolioEdit" />
+		<put-attribute name="body" value="/WEB-INF/views/client/clientPortfolioEdit.jsp" />
+	</definition>
+	
+	<definition name="/updateclientportfoliosuccess.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="updateclientportfoliosuccess" />
+		<put-attribute name="body" value="/WEB-INF/views/client/clientPortfolioEditSuccess.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="/clientFinalSubmission.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="clientFinalSubmission" />
+		<put-attribute name="body" value="/WEB-INF/views/client/finalSubmission.jsp" />
+	</definition>
+     <definition name="/hirePostTaskProcessStep1.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="hirePostTaskProcessStep1" />
+		<put-attribute name="body" value="/WEB-INF/views/client/hirePostTaskProcessStep1.jsp" />
+	</definition>
+	
+	<definition name="/hirePostTaskProcessStep2.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="hirePostTaskProcessStep2" />
+		<put-attribute name="body" value="/WEB-INF/views/client/hirePostTaskProcessStep2.jsp" />
+	</definition>
+	
+	<definition name="/hireTaskDetail.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="hireTaskDetail" />
+		<put-attribute name="body" value="/WEB-INF/views/client/hireTaskDetail.jsp" />
+	</definition>
+	
+	<definition name="/hireTaskDetailStep2.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="hireTaskDetailStep2" />
+		<put-attribute name="body" value="/WEB-INF/views/client/hireTaskDetailStep2.jsp" />
+	</definition>
+	
+	<definition name="/myProject.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="myProject" />
+		<put-attribute name="body" value="/WEB-INF/views/client/myProject.jsp" />
+	</definition>
+	
+	<definition name="/postABrief.tiles" extends="baseLayout">
+		<put-attribute name="title" value="postABrief" />
+		<put-attribute name="body" value="/WEB-INF/views/client/postABrief.jsp" />
+	</definition>
+	
+	<definition name="/postStep1.tiles" extends="baseLayout">
+		<put-attribute name="title" value="postStep1" />
+		<put-attribute name="body" value="/WEB-INF/views/client/postStep1.jsp" />
+	</definition>
+	
+	<definition name="/postStep1ProcessPayment.tiles" extends="baseLayout">
+		<put-attribute name="title" value="postStep1ProcessPayment" />
+		<put-attribute name="body" value="/WEB-INF/views/client/postStep1ProcessPayment.jsp" />
+	</definition>
+	
+	<definition name="/postStep2UploadProductSupportFiles.tiles" extends="baseLayout">
+		<put-attribute name="title" value="postStep2UploadProductSupportFiles" />
+		<put-attribute name="body" value="/WEB-INF/views/client/postStep2UploadProductSupportFiles.jsp" />
+	</definition>
+	
+	<definition name="/projectBriefDetail.tiles" extends="baseLayout">
+		<put-attribute name="title" value="projectBriefDetail" />
+		<put-attribute name="body" value="/WEB-INF/views/client/projectBriefDetail.jsp" />
+	</definition>
+	
+	<definition name="/editProjectBriefDetail.tiles" extends="baseLayout">
+		<put-attribute name="title" value="editProjectBriefDetail" />
+		<put-attribute name="body" value="/WEB-INF/views/client/editProjectBriefDetail.jsp" />
+	</definition>
+	
+	<!-- <definition name="/updateProjectBriefDetail.tiles" extends="baseLayout">
+		<put-attribute name="title" value="updateProjectBriefDetail" />
+		<put-attribute name="body" value="/WEB-INF/views/client/projectBriefDetail.jsp" />
+	</definition> -->
+	
+	<definition name="/uploadRevisionsForProject.tiles" extends="baseLayout">
+		<put-attribute name="title" value="uploadRevisionsForProject" />
+		<put-attribute name="body" value="/WEB-INF/views/client/uploadRevisionsForProject.jsp" />
+	</definition>
+	
+	<definition name="/designFeeBreakdown.tiles" extends="baseLayout">
+		<put-attribute name="title" value="designFeeBreakdown" />
+		<put-attribute name="body" value="/WEB-INF/views/client/designFeeBreakdown.jsp" />
+	</definition>
+     
+     <!-- end clients -->	
+     
+	<definition name="/regDesigner.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/RegDesigners.jsp" />
+	</definition>	
+	
+	<definition name="/registrationSuccess.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Registration Success" />
+		<put-attribute name="body" value="/WEB-INF/views/home/registrationSucess.jsp" />
+	</definition>		
+
+	<definition name="/regDesignerSuccess.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Registration Success" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/RegistrationSuccess.jsp" />
+	</definition>	
+		
+	<definition name="/resetPassword.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Reset Password Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ResetPassword.jsp" />
+	</definition>	
+	<definition name="/resetPasswordSuccess.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Reset Password Success" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ResetPasswordSuccess.jsp" />
+	</definition>	
+		
+	<definition name="/adminPortfolio.tiles" extends="baseLayout">
+		<put-attribute name="title" value="User Portfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/AdminPortfolio.jsp" />
+	</definition>
+
+	<definition name="/hireTaskInformation.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="hire Task Information" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/HireTaskInformation.jsp" />
+	</definition>
+
+	<definition name="/canNotHireTask.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="hire Task Information" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/CanNotHireTask.jsp" />
+	</definition>
+	
+	<definition name="/canNotPostTask.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="hire Task Information" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/CanNotPostTask.jsp" />
+	</definition>
+	
+	
+	<definition name="/editPayment.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Designer Payment Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/EditPayment.jsp" />
+	</definition>
+	
+	
+	<definition name="/updateDesignerAccountForm.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Designer Account Information" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateAccountForm.jsp" />
+	</definition>
+	
+	
+	<definition name="/clientPayment.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="User Payment Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ClientPayment.jsp" />
+	</definition>
+
+	<definition name="/clientTopup.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="User top up" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ClientTopup.jsp" />
+	</definition>
+	<definition name="/processTopup.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Process top up" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ClientTopupProcess.jsp" />
+	</definition>	
+
+	<definition name="/clientWithdraw.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="User Withdraw Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ClientWithdraw.jsp" />
+	</definition>
+
+
+	<definition name="/designerWithdraw.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="User Withdraw Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/DesignerWithdraw.jsp" />
+	</definition>
+			
+	<definition name="/postTaskInformation.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Post Brief Information" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/PostTaskInformation.jsp" />
+	</definition>
+	
+	
+	<definition name="/updateClientAccountForm.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Update Account Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateClientAccountForm.jsp" />
+	</definition>	
+	
+	
+	
+
+	<definition name="/updateClientPassword.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Update Password Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateClientPassword.jsp" />
+	</definition>
+
+	<definition name="/updateDesignerPassword.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Update Password Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateDesignerPassword.jsp" />
+	</definition>
+	
+	<definition name="/updateClientBank.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Update Bank Account Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateClientBank.jsp" />
+	</definition>
+
+	<definition name="/updateDesignerBank.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Update Bank Account Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateDesignerBank.jsp" />
+	</definition>
+				
+	<definition name="/viewProfile.tiles" extends="baseLayout">
+		<put-attribute name="title" value="View Portfolio Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ViewPortfolio.jsp" />
+	</definition>	
+
+	<definition name="/viewRating.tiles" extends="baseLayout">
+		<put-attribute name="title" value="View Rating Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ViewRating.jsp" />
+	</definition>	
+
+	<definition name="/viewRatingDetail.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="View Rating Details" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ViewRating.jsp" />
+	</definition>		
+	
+		
+	<definition name="/imageUploadForm.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Image Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ImageUploadForm.jsp" />
+	</definition>		
+
+	<definition name="/imageExProdUploadForm.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Ex Prod Image Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ImageExProdUploadForm.jsp" />
+	</definition>
+	
+	<definition name="/createPortfolio.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Edit Portfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/CreatePortfolio.jsp" />
+	</definition>
+	
+	<definition name="/editPortfolioClient.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Edit Portfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/EditPortfolioClient.jsp" />
+	</definition>			
+
+	<definition name="/updatePortfolioSuccess.tiles" extends="baseLayout">
+		<put-attribute name="title" value="UpdatePortfolioSuccess Portfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/AdminPortfolio.jsp" />
+	</definition>		
+
+
+
+	<definition name="/updateAccountSuccess.tiles" extends="baseLayout">
+		<put-attribute name="title" value="UpdateAccountForm Portfolio" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateAccountSuccess.jsp" />
+	</definition>
+	
+	<definition name="/postNewTask.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Post a brief" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/PostNewTask.jsp" />
+	</definition>
+	
+	<definition name="/postNewTaskImage.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Post Brief image" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/PostNewTaskReqImage.jsp" />
+	</definition>
+
+	<definition name="/editPostTaskImage.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Edit Post Brief image" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/EditPostTaskReqImage.jsp" />
+	</definition>	
+	
+	<definition name="/postNewTaskSuccess.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Post Brief success" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/PostNewTaskSuccess.jsp" />
+	</definition>
+		
+	<definition name="/viewPost.tiles" extends="baseLayout">
+		<put-attribute name="title" value="View Post Task" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/ViewPostTask.jsp" />
+	</definition>
+
+	<definition name="/viewPostDetail.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="View Task Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/ViewPostTaskDetail.jsp" />
+	</definition>	
+	
+	<definition name="/viewTaskPost.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="View Brief Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/ViewTaskDetail.jsp" />
+	</definition>	
+
+	<definition name="/viewTaskHired.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="View Brief Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/ViewHireTaskDetail.jsp" />
+	</definition>	
+		
+	<definition name="/viewTaskProcessAll.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="View Brief Process" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/ViewTaskProcessAll.jsp" />
+	</definition>		
+
+	<definition name="/ratingProcess.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Rating Process" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/RatingProcess.jsp" />
+	</definition>	
+
+
+	<definition name="/editPostDetail.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Edit Task Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/EditPostTaskDetail.jsp" />
+	</definition>	
+	
+	<definition name="/allPostList.tiles" extends="baseLayout">
+		<put-attribute name="title" value="All Post Brief" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/AllPostTask.jsp" />
+	</definition>	
+	
+		
+	<definition name="/imagePostReqUploadForm.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Post Requirement Image Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/ImagePostReqUploadForm.jsp" />
+	</definition>
+	
+	<definition name="/editReqImageNew.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Update Post Requirement Image" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/UpdateImagePostReq.jsp" />
+	</definition>	
+	<definition name="/editReqImagePost.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Update Post Requirement Image" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/UpdateImagePost.jsp" />
+	</definition>	
+		
+	<definition name="/editImagePostReqUploadForm.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Post Requirement Image Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/EditImagePostReqUploadForm.jsp" />
+	</definition>	
+	
+	<definition name="/hireTask.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Task Step 1" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireTask.jsp" />
+	</definition>	
+	
+	<definition name="/hireTaskStep2.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Task Step 2" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireTaskStep2.jsp" />
+	</definition>	
+
+	<definition name="/hireTaskStep3.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Task Step 3" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireTaskStep3.jsp" />
+	</definition>	
+	
+	<definition name="/hireTaskStep4.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Task Step 4" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireTaskStep4.jsp" />
+	</definition>	
+			
+	<definition name="/viewHireTask.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="View Hire Task" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/ViewHireTask.jsp" />
+	</definition>	
+
+	<definition name="/editHireTaskStep1.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Edit Hire Task" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/EditHireTaskStep1.jsp" />
+	</definition>	
+
+	<definition name="/editHireTaskStep2.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Edit Hire Task" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/EditHireTaskStep2.jsp" />
+	</definition>
+	
+	<definition name="/editHireTaskStep3.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Edit Hire Task" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/EditHireTaskStep3.jsp" />
+	</definition>	
+
+	<definition name="/editHireTaskStep4.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Edit Hire Task" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/EditHireTaskStep4.jsp" />
+	</definition>
+			
+	<definition name="/viewHireTaskDetail.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="View Hire Task Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/ViewHireTaskDetail.jsp" />
+	</definition>	
+	
+	<definition name="/addHireProductFile.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Product File Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/fileUploadForm.jsp" />
+	</definition>	
+	
+	<definition name="/addHireProductFile2.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Product File Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireProductUploadForm2.jsp" />
+	</definition>	
+	
+
+	<definition name="/addHireProductFile3.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Product File Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireProductUploadForm3.jsp" />
+	</definition>	
+	
+	<definition name="/addHireProductFile4.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Hire Product File Upload Form" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/HireProductUploadForm4.jsp" />
+	</definition>		
+		
+	<definition name="/editProductFile.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Edit Hire Product File" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/UpdateProductFile.jsp" />
+	</definition>		
+
+	<definition name="/editProductFile3.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Edit Hire Product File" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/UpdateProductFile3.jsp" />
+	</definition>	
+	
+	<definition name="/editProductFile4.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Edit Hire Product File" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/UpdateProductFile4.jsp" />
+	</definition>		
+		
+	<definition name="/guaranteeReviewsStep1.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Guarantee Reviews Step1" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/GuaranteeReviewsStep1.jsp" />
+	</definition>	
+
+	<definition name="/guaranteeReviewsStep2.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Guarantee Reviews Step2" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/GuaranteeReviewsStep2.jsp" />
+	</definition>
+	
+	<definition name="/guaranteeReviewsStep3.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Guarantee Reviews Step3" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/GuaranteeReviewsStep3.jsp" />
+	</definition>	
+	
+	<definition name="/guaranteeReviewsStep4.tiles" extends="profileClientLayout">
+		<put-attribute name="title" value="Guarantee Reviews Step4" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/GuaranteeReviewsStep4.jsp" />
+	</definition>	
+
+	<definition name="/reviewProductUploadForm1.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Review Product File Upload Form 1" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/ReviewProductUploadForm1.jsp" />
+	</definition>			
+	<definition name="/reviewProductUploadForm2.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Review Product File Upload Form 2" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/ReviewProductUploadForm2.jsp" />
+	</definition>
+	<definition name="/reviewProductUploadForm3.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Review Product File Upload Form 3" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/ReviewProductUploadForm3.jsp" />
+	</definition>
+	<definition name="/reviewProductUploadForm4.tiles" extends="profileDesignerLayout">
+		<put-attribute name="title" value="Review Product File Upload Form 4" />
+		<put-attribute name="body" value="/WEB-INF/views/hireTask/ReviewProductUploadForm4.jsp" />
+	</definition>
+
+	<definition name="/processPayment.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Process Payment Posting" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/ProcessPayment.jsp" />
+	</definition>		
+
+	<definition name="/processWithdraw.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Process Withdraw" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/ProcessWithdraw.jsp" />
+	</definition>	
+
+
+	<definition name="/processPaymentTaskFee.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Process Payment Task" />
+		<put-attribute name="body" value="/WEB-INF/views/admin/ProcessPaymentTaskFee.jsp" />
+	</definition>	
+	
+	<definition name="/updatePayment.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Update Payment Posting Fee" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdatePayment.jsp" />
+	</definition>	
+
+	<definition name="/updateWithdraw.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Update Withdraw" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdateWithdraw.jsp" />
+	</definition>	
+	
+	<definition name="/updatePaymentPosting.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Update Payment Posting Fee" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdatePaymentPosting.jsp" />
+	</definition>	
+
+	<definition name="/updatePaymentTask.tiles" extends="adminLayout">
+		<put-attribute name="title" value="Update Payment Task Fee" />
+		<put-attribute name="body" value="/WEB-INF/views/userProfile/UpdatePaymentTask.jsp" />
+	</definition>	
+		
+	<definition name="/hireDesigners.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Hire designers" />
+		<put-attribute name="body" value="/WEB-INF/views/userTask/HireDesigners.jsp" />
+	</definition>	
+			
+</tiles-definitions>
