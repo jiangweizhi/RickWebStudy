@@ -23,6 +23,9 @@
 			</div>
 			<input type="hidden" id="hidPostMessage" name="commentValue" />
 		</form:form>
+		<div>
+			<a href="<c:url value="/image.xhtml" />">Jump to Image Function Page</a>
+		</div>
 	</body>
 	<script type="text/javascript">
 		$(document).ready(function(){
