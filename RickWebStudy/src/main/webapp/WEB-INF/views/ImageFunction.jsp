@@ -1,5 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,10 +19,30 @@
 <script type="text/javascript" src="<c:url value="/static/uploadify/swfobject.js" />"></script>
 
 <script type="text/javascript">
+	function startUpload(){  
+		$('#file_upload').uploadify('upload','*');  
+	}
+
 	$(document).ready(function(){
+		
 		$("#submitA").bind("click",function(){
 			$("#proposalForm").submit();
 		});
+		
+		$('#file_upload').uploadify({ 
+			'swf': '<c:url value="/static/uploadify/uploadify.swf"/>', 'sizeLimit'   : 1024, 
+			'uploader':'<c:url value="/image/rick.xhtml" />', 
+			'auto'  : false,
+			'multi': true,
+			'fileSizeLimit' : '1024KB',
+			'fileTypeExts': '*.jpg;*.gif;*.jpeg;*.png;*.bmp;*.pdf',
+			'onQueueComplete': function (queueData) {
+                if(queueData.uploadsSuccessful>=1){
+                    alert('Hihi')
+                }
+            }
+
+		});	
 	});
 
 	function imgChange(next) {
@@ -44,6 +70,12 @@
 </head>
 <body>
 	<div>This is page of Image Functions</div>
+	<div>
+		<input type="file" name="uploadify" id="file_upload" />
+		<hr>
+		<a class="easyui-linkbutton" onclick="startUpload();" href="javascript:void(0);">开始上传</a> 
+		<a href="javascript:$('#file_upload').uploadify('cancel', '*')" class="easyui-linkbutton">取消所有上传</a> 
+	</div>
 	<form id="proposalForm" method="post"
 		action="/image/resize.xhtml"  enctype="multipart/form-data">
 		<table class="ptd">
