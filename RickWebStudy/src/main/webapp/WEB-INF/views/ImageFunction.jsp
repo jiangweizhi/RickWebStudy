@@ -15,8 +15,8 @@
 <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/public.css" />" />
 
 <link type="text/css" rel="stylesheet" href="<c:url value="/static/uploadify/uploadify.css" />" />
-<script type="text/javascript" src="<c:url value="/static/uploadify/jquery.uploadify.min.js" />"></script>
-<script type="text/javascript" src="<c:url value="/static/uploadify/swfobject.js" />"></script>
+<%-- <script type="text/javascript" src="<c:url value="/static/uploadify/jquery.uploadify.min.js" />"></script> --%>
+<script type="text/javascript" src="<c:url value="/static/uploadify/jquery.uploadify.js" />"></script>
 
 <script type="text/javascript">
 	function startUpload(){  
@@ -36,11 +36,9 @@
 			'multi': true,
 			'fileSizeLimit' : '1024KB',
 			'fileTypeExts': '*.jpg;*.gif;*.jpeg;*.png;*.bmp;*.pdf',
-			'onQueueComplete': function (queueData) {
-                if(queueData.uploadsSuccessful>=1){
-                    alert('Hihi')
-                }
-            }
+			'onAllComplete': function(event,data){
+				alert(data)
+			}
 
 		});	
 	});
@@ -76,8 +74,8 @@
 		<a class="easyui-linkbutton" onclick="startUpload();" href="javascript:void(0);">开始上传</a> 
 		<a href="javascript:$('#file_upload').uploadify('cancel', '*')" class="easyui-linkbutton">取消所有上传</a> 
 	</div>
-	<form id="proposalForm" method="post"
-		action="/image/resize.xhtml"  enctype="multipart/form-data">
+	<form:form id="proposalForm" method="post"
+		action="/image/move.xhtml"  enctype="multipart/form-data">
 		<table class="ptd">
 			<tr>
 				<th colspan="2" class="tit">Please submit your product</th>
@@ -94,9 +92,12 @@
 
 								<td width="499"><input type="file" name="uploadFile"
 									id="photoFile0" size="40"
-									onChange='return imgChange("tr_photoFile1")' /></td>
+									onChange='return imgChange("tr_photoFile1")' />
+									<span id="spanFileNumber"></span>
+									<span id="spanErrorMsg" style="color:red;"></span>
+								</td>
 							</tr>
-							<tr id="tr_photoFile1" style="display: none;">
+							<!-- <tr id="tr_photoFile1" style="display: none;">
 
 								<td><input type="file" name="uploadFile" id="photoFile1"
 									onChange='return imgChange("tr_photoFile2")' size="40" /></td>
@@ -111,7 +112,7 @@
 								<td><input type="file" name="uploadFile" id="photoFile3"
 									onChange='return imgChange(null)' size="40" /></td>
 
-							</tr>
+							</tr> -->
 						</table>
 					</div>
 
@@ -125,24 +126,39 @@
 				<td colspan="2" class="btn"><input type="submit" value="Submit" /></td>
 			</tr>
 		</table>
+		<input type="hidden" id="hidFileName" name="fileName" />
 		<script type="text/javascript">
+			var fileCount = 0;
+			
 			$(document).ready(function(){
-				
+				var fileName = "";
 				$('#photoFile0').uploadify({ 
 					'swf': '<c:url value="/static/uploadify/uploadify.swf"/>', 'sizeLimit'   : 1024, 
-					'uploader':'<c:url value="/image/resize.xhtml"/>', 
+					'uploader':'<c:url value="/image/rick.xhtml"/>', 
 					'auto'  : false,
 					'multi': true,
+					'simUploadLimit': 4,
+					'queueSizeLimit': 4,
+					'progressData' : 'all',
 					'fileSizeLimit' : '1024KB',
 					'fileTypeExts': '*.jpg;*.gif;*.jpeg;*.png;*.bmp;*.pdf',
-					'onQueueComplete': function (queueData) {
-	                    if(queueData.uploadsSuccessful>=1){
-	                        alert('Hihi')
-	                    }
-	                }
-
+					'onSelect': function(file){
+						if(fileCount < 4){
+							$('#photoFile0').uploadify('upload','*');  
+						}else{
+							this.cancelUpload(file.id);
+							$("#spanErrorMsg").html(" You can't upload more than 4 files.");
+						}
+					},
+					'onUploadSuccess': function(file, data, response) {
+						if(response){
+							fileCount++;
+							fileName += data+";";
+							$("#hidFileName").val(fileName);
+							$("#spanFileNumber").html("You had successful upload " + fileCount + " files.");
+						}
+					}
 				});	
-				
 				
 				/* $("#proposalForm").bind("submit", function(){
 					var filepath=$("input[name='uploadFile']").val();
@@ -163,6 +179,6 @@
 				}); */
 			});
 		</script>
-	</form>
+	</form:form>
 </body>
 </html>
