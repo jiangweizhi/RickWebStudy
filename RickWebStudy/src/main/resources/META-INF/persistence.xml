@@ -7,6 +7,9 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>com.rickwebstudy.entity.User</class>
         <class>com.rickwebstudy.entity.Comment</class>
+        <class>com.rickwebstudy.entity.YixinUser</class>
+        <class>com.rickwebstudy.entity.YixinLoginLog</class>
+        <class>com.rickwebstudy.entity.YixinActionLog</class>
         <exclude-unlisted-classes/>
         <properties>
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>

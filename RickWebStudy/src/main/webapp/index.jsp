@@ -10,10 +10,11 @@
 	<head>
 		<script type="text/javascript" src="<c:url value="/static/resources/jquery/1.6/jquery.js" />"></script>
     	<title>Hello Rick</title>
+    	<meta http-equiv="Access-Control-Allow-Origin" content="*">
 	</head>
 
 	<body>
-		<div>Hello Rick</div>
+		<div id="divTest">Hello Rick</div>
 		<form:form id="commentForm" method="post" action="/comment/postComment.xhtml" enctype="multipart/form-data">
 			<div>
 				<%-- <a href="<c:url value="/home.xhtml" />">Home</a>
@@ -29,11 +30,66 @@
 	</body>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			
+			$("#divTest").data("rick", "Rick Jiang0").data("rick2", "Rick Jiang1");
+			var myValue = $("#divTest").data("rick2");
+			alert(myValue);
 			$("#btnPost").bind("click", function(){
 				//alert($("#txtComment").val());
 				$("#hidPostMessage").val($("#txtComment").val());
 				$("#commentForm").submit();
 			});
+			
+			/* var url = "http://wangiv2-w7/NameCardRestService/GetRestDatas.ashx?functionName=listfavourites&params={domainID: \"chensa7\",sortByField: \"Name\",sortOrder: \"A\",numRecord: \"10\",lastRecordIndex: \"0\"}";
+			$.ajax({
+				type:'GET',
+				url:url,
+				//data:"{functionName:listfavourites;params:{%22domainID%22:%22chensa7%22,%22sortByField%22:%22Name%22,%22sortOrder%22:%22A%22,%22numRecord%22:%225%22,%22lastRecordIndex%22:%220%22}}",
+				dataType:'json',
+				success:function(data) {
+				    alert("Success:" + data.responseCode);
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown) {
+					alert("Search failed\n" + XMLHttpRequest.status + XMLHttpRequest.readyState + "\nresponseText:" + XMLHttpRequest.responseText + "\nresponseBody:" + XMLHttpRequest.responseBody + "\n" + textStatus + "\n" + errorThrown);
+					return null;
+				}
+			}); */
+			
+			//var url = "http://wangiv2-w7/NameCardRestService/GetRestDatas.ashx?functionName=listfavourites&params={domainID: \"chensa7\",sortByField: \"Name\",sortOrder: \"A\",numRecord: \"10\",lastRecordIndex: \"0\"}";
+			/* var url = "http://wangiv2-w7/NameCardRestService/GetRestDatas.ashx";
+			jQuery.support.cors = true;
+			$.ajax({
+				type:'GET',
+				url:url,
+				data: {functionName:"listfavourites",params:"{domainID:\"chensa7\",sortByField: \"Name\",sortOrder: \"A\",numRecord: \"10\",lastRecordIndex: \"0\"}"},
+				dataType:'json',
+				contentType: "application/json;charset=utf-8",
+				cache:false,
+				success:function(data) {
+				    alert("Success:" + data.responseCode);
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown) {
+					alert("Search failed\n" + XMLHttpRequest.status + XMLHttpRequest.readyState + "\nresponseText:" + XMLHttpRequest.responseText + "\nresponseBody:" + XMLHttpRequest.responseBody + "\n" + textStatus + "\n" + errorThrown);
+					return null;
+				}
+			}); */
+			
+			/* var url = "http://wangiv2-w7/NameCardRestService/GetRestDatas.ashx?functionName=listfavourites&params={domainID: \"chensa7\",sortByField: \"Name\",sortOrder: \"A\",numRecord: \"10\",lastRecordIndex: \"0\"}";
+			jQuery.support.cors = true;
+			$.ajax({
+				type:'GET',
+				url:url,
+				dataType:'json',
+				cache:false,
+				success:function(data) {
+				    alert("Success:" + data.responseCode);
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown) {
+					alert("Search failed\n" + XMLHttpRequest.status + XMLHttpRequest.readyState + "\nresponseText:" + XMLHttpRequest.responseText + "\nresponseBody:" + XMLHttpRequest.responseBody + "\n" + textStatus + "\n" + errorThrown);
+					return null;
+				}
+			}); */
+			//$.get(url, {functionName:"listfavourites", params:"{domainID:\"chensa7\",sortByField: \"Name\",sortOrder: \"A\",numRecord: \"10\",lastRecordIndex: \"0\"}"}, function(data){alert(data);});
 		});
 	</script>
 </html>

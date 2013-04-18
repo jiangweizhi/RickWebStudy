@@ -12,7 +12,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.rickwebstudy.entity.Comment;
+import com.rickwebstudy.entity.YixinActionLog;
+import com.rickwebstudy.entity.YixinLoginLog;
+import com.rickwebstudy.entity.YixinUser;
 import com.rickwebstudy.repository.CommentRepository;
+import com.rickwebstudy.repository.YixinActionLogRepository;
+import com.rickwebstudy.repository.YixinLoginLogRepository;
+import com.rickwebstudy.repository.YixinUserRepository;
 import com.rickwebstudy.service.RickServiceInterface;
 import com.rickwebstudy.utils.ImageUtil;
 
@@ -21,6 +27,12 @@ public class RickServiceImpl implements RickServiceInterface {
 
 	@Inject
 	protected CommentRepository commentRepository; 
+	@Inject 
+	protected YixinUserRepository yixinUserRepository;
+	@Inject
+	protected YixinLoginLogRepository yixinLoginLogRepository;
+	@Inject
+	protected YixinActionLogRepository yixinActionLogRepository;
 	
 	// For Comment functions
 	@Override
@@ -89,4 +101,44 @@ public class RickServiceImpl implements RickServiceInterface {
 		
 		ImageUtil.createThumbnailImage(times, sourceFilePath, targetPath);
 	}
+
+	
+	//For Android Message correction functions
+	@Override
+	public boolean checkYixinUser(Long deviceId) {
+		boolean result = false;
+		List<YixinUser> yixinUsers = yixinUserRepository.getYixinUserByDeviceId(deviceId);
+		if(yixinUsers.size() > 0){
+			result = true;
+		}
+		
+		return result;
+	}
+
+	@Override
+	public YixinUser getYixinUserByDeviceId(Long deviceId) {
+		YixinUser yixinUser = null;
+		List<YixinUser> yixinUsers = yixinUserRepository.getYixinUserByDeviceId(deviceId);
+		if(yixinUsers.size() > 0){
+			yixinUser = yixinUsers.get(0);
+		}
+		
+		return yixinUser;
+	}
+
+	@Override
+	public void persistYixinUser(YixinUser yixinUser) {
+		yixinUserRepository.saveAndFlush(yixinUser);
+	}
+
+	@Override
+	public void persistYixinLoginLog(YixinLoginLog yixinLoginLog) {
+		yixinLoginLogRepository.saveAndFlush(yixinLoginLog);
+	}
+
+	@Override
+	public void persistYixinActionlog(YixinActionLog yixinActionLog) {
+		yixinActionLogRepository.saveAndFlush(yixinActionLog);
+	}
+	
 }

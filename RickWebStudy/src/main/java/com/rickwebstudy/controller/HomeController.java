@@ -21,4 +21,19 @@ public class HomeController extends AbstractController{
 		
 		return mav;
 	}
+	
+	@RequestMapping(value = "test", method=RequestMethod.GET)
+	public ModelAndView test(){
+		ModelAndView mav = new ModelAndView("test");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value = "test2", method=RequestMethod.GET)
+	public ModelAndView test2(){
+		ModelAndView mav = new ModelAndView("test2");
+		
+		return mav;
+	}
+	
 }

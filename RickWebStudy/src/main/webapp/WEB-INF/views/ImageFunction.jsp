@@ -34,7 +34,7 @@
 			'uploader':'<c:url value="/image/rick.xhtml" />', 
 			'auto'  : false,
 			'multi': true,
-			'fileSizeLimit' : '1024KB',
+			'fileSizeLimit' : '4096KB',
 			'fileTypeExts': '*.jpg;*.gif;*.jpeg;*.png;*.bmp;*.pdf',
 			'onAllComplete': function(event,data){
 				alert(data)
@@ -140,7 +140,7 @@
 					'simUploadLimit': 4,
 					'queueSizeLimit': 4,
 					'progressData' : 'all',
-					'fileSizeLimit' : '1024KB',
+					'fileSizeLimit' : '4096KB',
 					'fileTypeExts': '*.jpg;*.gif;*.jpeg;*.png;*.bmp;*.pdf',
 					'onSelect': function(file){
 						if(fileCount < 4){
